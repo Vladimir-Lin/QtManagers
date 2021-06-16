@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nBlobToCpp</class>
+ <widget class="QDialog" name="nBlobToCpp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Blob to C/C++</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../Images/Branon.qrc">
+    <normaloff>:/images/checklist.png</normaloff>:/images/checklist.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Blob to C/C++</string>
+  </property>
+  <property name="statusTip">
+   <string>Blob to C/C++</string>
+  </property>
+  <property name="whatsThis">
+   <string>Blob to C/C++</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>20</y>
+     <width>80</width>
+     <height>240</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="Stacked">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>340</width>
+     <height>120</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="Blob"/>
+   <widget class="QWidget" name="Fixed"/>
+   <widget class="QWidget" name="Floating">
+    <widget class="QCheckBox" name="isPrecision">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>200</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Floating precisions</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="Precision">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>120</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="suffix">
+      <string> digits</string>
+     </property>
+     <property name="maximum">
+      <number>80</number>
+     </property>
+     <property name="value">
+      <number>4</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="String">
+    <widget class="QLineEdit" name="StrName">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>300</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>QString name</string>
+     </property>
+     <property name="statusTip">
+      <string>QString name</string>
+     </property>
+     <property name="whatsThis">
+      <string>QString name</string>
+     </property>
+     <property name="placeholderText">
+      <string>QString name</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolButton" name="ExportCpp">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Export C++</string>
+   </property>
+   <property name="statusTip">
+    <string>Export C++</string>
+   </property>
+   <property name="whatsThis">
+    <string>Export C++</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../Images/Branon.qrc">
+     <normaloff>:/images/sourcecpp.png</normaloff>:/images/sourcecpp.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="CppFile">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>20</y>
+     <width>316</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>C++ filename</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SizeName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>200</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Size name</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="DataSize">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>100</y>
+     <width>130</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Export data size</string>
+   </property>
+   <property name="statusTip">
+    <string>Export data size</string>
+   </property>
+   <property name="whatsThis">
+    <string>Export data size</string>
+   </property>
+   <property name="text">
+    <string>Export data size</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="DataName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>340</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Data name</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Images/Branon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>nBlobToCpp</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>nBlobToCpp</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ExportCpp</sender>
+   <signal>clicked()</signal>
+   <receiver>nBlobToCpp</receiver>
+   <slot>ExportCpp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

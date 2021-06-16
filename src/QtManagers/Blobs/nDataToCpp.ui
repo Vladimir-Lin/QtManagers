@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nDataToCpp</class>
+ <widget class="QDialog" name="nDataToCpp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data to C++</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../Images/Branon.qrc">
+    <normaloff>:/images/sourcecpp.png</normaloff>:/images/sourcecpp.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Data to C++</string>
+  </property>
+  <property name="statusTip">
+   <string>Data to C++</string>
+  </property>
+  <property name="whatsThis">
+   <string>Data to C++</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>340</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="DataName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>360</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Data name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SizeName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>220</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Size name</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="DataSize">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>130</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Export data size</string>
+   </property>
+   <property name="statusTip">
+    <string>Export data size</string>
+   </property>
+   <property name="whatsThis">
+    <string>Export data size</string>
+   </property>
+   <property name="text">
+    <string>Export data size</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="DataSource">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Data source</string>
+   </property>
+   <property name="statusTip">
+    <string>Data source</string>
+   </property>
+   <property name="whatsThis">
+    <string>Data source</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../Images/Branon.qrc">
+     <normaloff>:/images/folder.png</normaloff>:/images/folder.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Source">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>100</y>
+     <width>336</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Data file</string>
+   </property>
+   <property name="statusTip">
+    <string>Data file</string>
+   </property>
+   <property name="whatsThis">
+    <string>Data file</string>
+   </property>
+   <property name="placeholderText">
+    <string>Data source</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="ExportCpp">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Export C++</string>
+   </property>
+   <property name="statusTip">
+    <string>Export C++</string>
+   </property>
+   <property name="whatsThis">
+    <string>Export C++</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../Images/Branon.qrc">
+     <normaloff>:/images/sourcecpp.png</normaloff>:/images/sourcecpp.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Cpp">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>140</y>
+     <width>336</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>C++ filename</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Images/Branon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DataSource</sender>
+   <signal>clicked()</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>DataSource()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ExportCpp</sender>
+   <signal>clicked()</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>ExportCpp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DataSize</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>DataSize(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>314</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cpp</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>EditorChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DataName</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>EditorChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SizeName</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>EditorChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Source</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>nDataToCpp</receiver>
+   <slot>EditorChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

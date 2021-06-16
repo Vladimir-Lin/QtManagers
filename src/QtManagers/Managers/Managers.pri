@@ -1,0 +1,10 @@
+SOURCES += $${PWD}/nPicturePlugin.cpp
+SOURCES += $${PWD}/nDocumentPlugin.cpp
+SOURCES += $${PWD}/nHunterPlugin.cpp
+SOURCES += $${PWD}/nSqlPlugins.cpp
+SOURCES += $${PWD}/nPictureManager.cpp
+SOURCES += $${PWD}/nPeopleManager.cpp
+SOURCES += $${PWD}/nTagsManager.cpp
+SOURCES += $${PWD}/CommonSeeker.cpp
+SOURCES += $${PWD}/nLearnSite.cpp
+SOURCES += $${PWD}/nExecution.cpp
